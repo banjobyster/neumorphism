@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>canvas</title>
+</head>
+<body>
+  <div style="display:inline-block">
+  <button class="toggleTheme" onclick="themeChange()">
+    <i class="themeSymbol fa fa-sun-o"></i>
+  </button>
+  </div>
+  <div id="container">
+    <div class="cont1">
+      <a href="https://banjobyster.github.io/" target="_blank">
+      <div id="colBg">
+        Sayan Bakshi
+      </div>
+      </a>
+      <div class="cont1">
+        <label class="TogglePlace">
+          <input class="input" type="checkbox">
+          <div class="toggle">
+            <div class="bip"></div>
+          </div>
+        </label>
+        <label class="TogglePlace">
+          <input class="input" type="checkbox" id="checked">
+          <div class="toggle">
+            <div class="bip"></div>
+          </div>
+        </label>
+      </div>
+      <div class="cont1">
+        <div style="margin-top: 20px;text-align: center;">
+          <a href="https://www.linkedin.com/in/sayan-bakshi-103546204/" target="_blank">
+          <button class="but fa fa-linkedin">
+          </button>
+          </a>
+          <a href="https://www.instagram.com/bakshi_sayan/" target="_blank">
+          <button class="but fa fa-instagram">
+          </button>
+          </a>
+          <a href="https://github.com/banjobyster" target="_blank">
+          <button class="but fa fa-github">
+          </button>
+          </a>
+        </div>
+        <div style="margin-top: 35px; text-align: center;">
+          <button class="sqBox" onclick="checked(0)">
+            <div class="checked cON">
+            </div>
+          </button>
+          <button class="sqBox" onclick="checked(1)">
+            <div class="checked">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="cont1">
+      <div class="tabs">
+        <button class="tab on" onclick="tabSelector(0)">
+          Tab 1
+        </button>
+        <button class="tab" onclick="tabSelector(1)">
+          Tab 2
+        </button>
+        <button class="tab" onclick="tabSelector(2)">
+          Tab 3
+        </button>
+      </div>
+      <div id="buttonsHolder">
+        <button class="buttonClass" id="hover">
+          Hover
+        </button>
+        <button class="buttonClass" id="click">
+          Click
+        </button>
+        <button class="buttonClass select" onclick="select()" id="select">
+          Select
+        </button>
+      </div>
+      <div id="horizontal">
+        <div class="sliderO">
+          <input type="range" min="1" max="100" value="50" class="slider" oninput="chi(0)">
+          <div class="slide" style="margin-top: 40px">
+          </div>
+        </div>
+        <div class="sliderO">
+          <input type="range" min="1" max="100" value="50" class="slider" oninput="chi(1)">
+          <div class="slide" style="margin-top: 40px">
+          </div>
+        </div>
+        <div class="sliderO">
+          <input type="range" min="1" max="100" value="50" class="slider" oninput="chi(2)">
+          <div class="slide" style="margin-top: 40px">
+          </div>
+        </div>
+        <div class="sliderO">
+          <input type="range" min="1" max="100" value="50" class="slider" oninput="chi(3)">
+          <div class="slide" style="margin-top: 40px">
+          </div>
+        </div>
+        <div class="sliderO">
+          <input type="range" min="1" max="100" value="50" class="slider" oninput="chi(4)">
+          <div class="slide" style="margin-top: 40px">
+          </div>
+        </div>
+        <div class="sliderO">
+          <input type="range" min="1" max="100" value="50" class="slider" oninput="chi(5)">
+          <div class="slide" style="margin-top: 40px">
+          </div>
+        </div>
+      </div>
+      <div id="search">
+        <div id="inner">
+        <input type="text" id="innerInput" placeholder=" Search...">
+        <i class="fa fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="myScript.js"></script>
+</body>
+</html>
